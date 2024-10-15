@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oráculo Astro</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="toggle-container">
+        <input type="checkbox" id="darkModeToggle" />
+        <label for="darkModeToggle" class="toggle-switch"></label>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#" id="oraculo-astro-h1"
+            >Oráculo Astro</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tarot.html">Tarot</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="oracle.html">Oráculo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rituals.html">Rituales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-me.html">Sobre Mí</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 id="main-h1">Bienvenidos a Oráculo Astro, la página oficial</h1>
+      <div class="container" id="main-content">
+        <p>Here is some text</p>
+        <p>
+          Here is some other text, but this one is longer because it is imprtant
+          to bring attention to it. the font is serif.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-10 mb-1">
+            <div class="card d-flex flex-row">
+              <img
+                src="src/images/04-ritual.jpeg"
+                class="card-img-left"
+                alt="Rituales de limpieza"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rituales de limpieza</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum in tellus vel ante consequat lobortis.
+                </p>
+                <a href="rituals.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-10 mb-1">
+              <div class="card d-flex flex-row">
+                <div class="card-body">
+                  <h5 class="card-title">Lecturas de Tarot</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum in tellus vel ante consequat lobortis.
+                  </p>
+                  <a href="tarot.html" class="btn btn-primary">Read More</a>
+                </div>
+                <img
+                  src="src/images/07-tarot.jpeg"
+                  class="card-img-right"
+                  alt="Tirada de tarot"
+                />
+              </div>
+            </div>
+          </div>
+                <div class="container">
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-10 mb-1">
+            <div class="card d-flex flex-row">
+              <img
+                src="src/images/01-oraculo-crop.jpeg"
+                class="card-img-left"
+                alt="Lectura de oráculo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lectura de Oráculo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum in tellus vel ante consequat lobortis.
+                </p>
+                <a href="oracle.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="disclaimer">
+        <p>Si tenía en mente otro tipo de ritual o de lectura de cartas, o simplemente desea tener una conversación conmigo para averiguar qué tipo de servicio le vendría mejor, por favor, póngase en contacto conmigo</p>
+        <a href="contact.html" class="btn btn-secondary" id="contacto">Contacta Conmigo</a>
+      </p>
+    </main>
+    <footer>
+      <div class="container" id="footer-container">
+        <div class="social-icons">
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon"
+            ><i class="fab fa-tiktok" title="TikTok"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram" title="Instagram"></i
+          ></a>
+          <a href="https://www.paypal.com" target="_blank" class="social-icon"
+            ><i class="fab fa-paypal" title="PayPal"></i
+          ></a>
+          <a href="https://www.revolut.com" target="_blank" class="social-icon"
+            ><i class="fa-solid fa-credit-card" title="Revolut"></i
+          ></a>
+          <a href="https://bizum.es" target="_blank" class="social-icon"
+            ><i class="fa-solid fa-hand-holding-dollar" title="Bizum"></i
+          ></a>
+          <a href="https://linktr.ee" target="_blank" class="social-icon"
+            ><i class="fas fa-link" title="Linktree"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

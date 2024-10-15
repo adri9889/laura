@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oráculo Astro - Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="toggle-container">
+        <input type="checkbox" id="darkModeToggle" />
+        <label for="darkModeToggle" class="toggle-switch"></label>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#" id="oraculo-astro-h1"
+            >Oráculo Astro</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tarot.html">Tarot</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="oracle.html">Oráculo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rituals.html">Rituales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-me.html">Sobre Mí</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="contacta-container">
+        <h1 id="contact-now">Contacta conmigo</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Número de Contacto:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container" id="footer-container">
+        <div class="social-icons">
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon"
+            ><i class="fab fa-tiktok" title="TikTok"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram" title="Instagram"></i
+          ></a>
+          <a href="https://www.paypal.com" target="_blank" class="social-icon"
+            ><i class="fab fa-paypal" title="PayPal"></i
+          ></a>
+          <a href="https://www.revolut.com" target="_blank" class="social-icon"
+            ><i class="fa-solid fa-credit-card" title="Revolut"></i
+          ></a>
+          <a href="https://bizum.es" target="_blank" class="social-icon"
+            ><i class="fa-solid fa-hand-holding-dollar" title="Bizum"></i
+          ></a>
+          <a href="https://linktr.ee" target="_blank" class="social-icon"
+            ><i class="fas fa-link" title="Linktree"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

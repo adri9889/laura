@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "Cotta";
+  src: url(fonts/Cotta\ Free.otf) format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Salma";
+  src: url(fonts/SalmaAlfasans-Light.otf) format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+header h1 {
+  font-family: "Cotta";
+}
+body {
+  background: white;
+  font-family: "Salma", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+#darkModeToggle {
+  display: none;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #3c1b6e;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.toggle-switch::after {
+  background-color: #3c1b6e;
+}
+#darkModeToggle:checked + .toggle-switch::before {
+  transform: translateX(20px);
+}
+#darkModeToggle:checked + .toggle-switch::after {
+  background-color: #ffffff;
+}
+.container {
+  text-align: center;
+  align-items: center;
+  background: transparent;
+}
+
+nav {
+  text-align: center;
+  align-items: center;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  white-space: nowrap;
+}
+.navbar-light {
+  background-color: transparent !important;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(45deg, #f26f68, #f3b07c, #548c8d, #5788a9);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+  border-radius: 5px;
+  filter: blur(1px);
+}
+
+.navbar-nav .nav-link:hover::before {
+  transform: scaleX(1);
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus .navbar-toggler-icon,
+.navbar-toggler:active .navbar-toggler-icon,
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+header {
+  padding: 20px;
+  border-radius: 10px;
+  background: transparent;
+  white-space: nowrap;
+}
+.nav-link {
+  margin-right: 15px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  color: black;
+}
+#main-h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-style: serif;
+  font-family: "Cotta";
+  padding: 15px;
+  margin: 0px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.card {
+  border: none;
+  background-color: white;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+  border-color: #548c8d;
+}
+
+.card-text {
+  line-height: 1.6;
+}
+.card-img-left,
+.card-img-right {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.btn {
+  background-color: #f26f68;
+  border: none;
+  color: beige;
+}
+.btn:hover {
+  background-color: #f3b07c;
+  border: none;
+  color: beige;
+}
+#oraculo-astro-h1 {
+  font-family: "Cotta";
+  background: linear-gradient(45deg, #f26f68, #f3b07c, #548c8d, #5788a9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 37px;
+}
+
+h5 {
+  padding: 15px;
+  font-weight: lighter;
+  font-size: smaller;
+}
+#contacto {
+  padding: 8px;
+  font-size: smaller;
+  font-weight: lighter;
+  background: #548c8d;
+}
+#contacto:hover {
+  background: #86c6db;
+  transition: 0.3s ease;
+}
+#footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+.social-icon {
+  font-size: 24px;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease, background 0.3 ease;
+}
+.social-icon:hover {
+  color: #f26f68;
+  text-decoration: none;
+}
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body.dark-mode {
+  background: #0d0618;
+  color: white;
+}
+
+body.dark-mode .toggle-switch {
+  background-color: #ffffff;
+}
+
+body.dark-mode .toggle-switch::before {
+  background-color: #1c0f2e;
+}
+
+body.dark-mode header {
+  background: transparent;
+}
+
+body.dark-mode nav {
+  background-color: transparent !important;
+}
+
+body.dark-mode .nav-link {
+  color: white !important;
+}
+
+body.dark-mode nav a.nav-link:hover::before {
+  background: linear-gradient(45deg, #f26f68, #f3b07c, #548c8d, #5788a9);
+}
+
+body.dark-mode #main-h1 {
+  color: white;
+}
+
+body.dark-mode main {
+  background: transparent;
+}
+
+body.dark-mode .card {
+  background-color: #0d0618;
+  color: white;
+}
+
+body.dark-mode .card:hover {
+  border-color: #f3b07c;
+}
+
+body.dark-mode .card .card-title {
+  color: white;
+}
+
+body.dark-mode .card .card-text {
+  color: #d3d3d3;
+}
+
+body.dark-mode .card .btn {
+  background-color: #726da8;
+  border: none;
+  color: beige;
+}
+
+body.dark-mode .card .btn:hover {
+  background-color: #f3b07c;
+  border: none;
+  color: beige;
+}
+
+body.dark-mode .social-icon {
+  color: #d3d3d3;
+}
+
+body.dark-mode .social-icon:hover {
+  color: #f3b07c;
+}
+body.dark-mode .navbar-collapse {
+  background-color: #0d0618; /* Dark background color */
+}
+
+body.dark-mode .navbar-collapse .nav-link {
+  color: white !important; /* White text color */
+}
+body.dark-mode .collapse navbar-collapse {
+  color: white !important;
+}
+body.dark-mode .navbar-toggler {
+  border-color: white;
+}
+
+body.dark-mode .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*Contact Page starts here*/
+
+#contact-now {
+  font-family: "Permanent Marker", cursive;
+  padding: 25px;
+  font-size: 2.5em;
+  text-align: center;
+}
+#contact-now:hover {
+  color: #86c6db;
+  transition: 0.2s ease-out;
+}
+#contacta-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #86c6db;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+.dark-mode #contacta-container {
+  background-color: #0d0618;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode #contact-now {
+  color: #eaeaea;
+}
+.dark-mode #contact-now:hover {
+  color: #86c6db;
+  transition: 0.2s ease-out;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+  background-color: #372c59;
+  color: #eaeaea;
+  border: 1px solid #555;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+  border-color: #86c6db;
+}
+body.dark-mode .btn {
+  background-color: #726da8;
+  border: none;
+  color: beige;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #f3b07c;
+  border: none;
+  color: beige;
+}
